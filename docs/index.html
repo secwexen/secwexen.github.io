@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Core SEO -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Secwexen | Portfolio & Projects</title>
+    <link rel="canonical" href="https://secwexen.github.io/secwexen/" />
+    <meta name="description" content="Official portfolio of Secwexen — cybersecurity and ethical hacking expert. Offensive & defensive security, Rust & Python, OSCP preparation, threat hunting, SIEM automation, malware analysis, and advanced security research." />
+    <meta name="keywords" content="Cybersecurity, Ethical Hacking, Penetration Testing, OSCP, CEH, Rust, Python, Threat Hunting, SIEM, Red Team, Blue Team, Digital Forensics, Malware Analysis, Security Automation, Cloud Security, CTF, Vulnerability Assessment, Secure Coding, Zero Trust" />
+    <meta name="author" content="secwexen" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="theme-color" content="#0b0f14" />
+
+    <!-- Open Graph & Structured Data (Unchanged from original, good for SEO) -->
+    <meta property="og:title" content="secwexen | Cybersecurity & Ethical Hacking Expert" />
+    <meta property="og:description" content="Portfolio of a cybersecurity specialist in offensive/defensive security, secure coding, and advanced threat research." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://secwexen.github.io/secwexen/" />
+    <meta property="og:image" content="https://secwexen.github.io/secwexen/preview.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="secwexen | Cybersecurity & Ethical Hacking Expert" />
+    <meta name="twitter:description" content="Explore the professional cybersecurity portfolio of secwexen." />
+    <meta name="twitter:image" content="https://secwexen.github.io/secwexen/preview.png" />
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "X99874",
+        "jobTitle": "Cybersecurity & Ethical Hacking Expert",
+        "description": "Specialist in offensive & defensive security, Rust & Python, OSCP preparation, threat hunting, SIEM automation, and malware analysis.",
+        "url": "https://x99874.github.io/X99874/",
+        "sameAs": [
+            "https://github.com/X99874",
+            "https://x99874.github.io/X99874/"
+        ],
+        "knowsAbout": [
+            "Penetration Testing",
+            "Threat Hunting",
+            "Digital Forensics",
+            "Malware Analysis",
+            "Secure Coding",
+            "Cloud Security",
+            "Zero Trust"
+        ]
+    }
+    </script>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Custom Tailwind Configuration and Fonts -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap');
+        
+        /* Custom font classes */
+        .font-inter { font-family: 'Inter', system-ui, sans-serif; }
+        .font-mono-jb { font-family: 'JetBrains Mono', ui-monospace, monospace; }
+
+        /* Custom color definitions */
+        /* Variables set specifically for the DARK theme */
+        :root {
+            --bg: #0b0f14;
+            --bg-soft: #101621;
+            --panel: #131a26;
+            --panel-2: #0f141c;
+            --text: #e8edf6;
+            --muted: #9fb3c8;
+            --border: #1f2a3a;
+            --accent: #4db5ff; /* Blue */
+            --accent-2: #7ee787; /* Green */
+            --danger: #ff7676;
+            --shadow: rgba(0,0,0,0.35);
+        }
+
+        /* Applying variables via utility classes */
+        .bg-var-bg { background-color: var(--bg); }
+        .bg-var-panel { background-color: var(--panel); }
+        .bg-var-panel-2 { background-color: var(--panel-2); }
+        .text-var-text { color: var(--text); }
+        .text-var-muted { color: var(--muted); }
+        .border-var-border { border-color: var(--border); }
+        .text-var-accent { color: var(--accent); }
+        .text-var-accent-2 { color: var(--accent-2); }
+        .text-var-danger { color: var(--danger); }
+        
+        /* Header background with blur effect */
+        .header-bg {
+            background-color: var(--bg-soft); 
+            backdrop-filter: saturate(140%) blur(8px);
+        }
+        .shadow-var { box-shadow: 0 6px 20px var(--shadow); }
+        .card-shadow { box-shadow: 0 10px 30px var(--shadow); }
+
+        /* CSS for smooth scroll handling and fixed header */
+        .no-scroll {
+            overflow: hidden;
+            height: 100vh;
+        }
+
+        /* Header height control for the scroll effect */
+        #mainHeader {
+            height: 64px; /* Default height (h-16) */
+            transition: all 0.3s ease-in-out;
+        }
+        #mainHeader.scrolled {
+            height: 56px; /* Reduced height after scrolling (h-14) */
+            border-bottom: 1px solid var(--border);
+        }
+        #mainHeader.scrolled .logo-text {
+            font-size: 1.1rem; /* Smaller font on scroll */
+            transition: font-size 0.3s ease-in-out;
+        }
+        #mainHeader .logo-text {
+            transition: font-size 0.3s ease-in-out;
+        }
+    </style>
+    
+</head>
+<body class="font-inter bg-var-bg text-var-text transition-colors duration-500 min-h-screen">
+    
+    <!-- Mobile Menu Backdrop -->
+    <div id="mobileMenuBackdrop" class="fixed inset-0 z-40 bg-black/50 transition-opacity duration-300 opacity-0 pointer-events-none lg:hidden"></div>
+
+    <!-- Mobile Menu (Off-Canvas/Sidebar) -->
+    <div id="mobileMenu" class="fixed inset-y-0 right-0 z-50 transform translate-x-full transition-transform duration-300 ease-in-out bg-var-panel p-6 shadow-2xl w-80 max-w-[80vw] lg:hidden overflow-y-auto">
+        <div class="flex justify-end mb-8">
+            <button id="closeMenu" class="text-xl p-2 rounded-full hover:bg-var-bg/30 text-var-text transition" aria-label="Close menu">
+                <!-- Close Icon (X) -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6L6 18M6 6l12 12"/></svg>
+            </button>
+        </div>
+        <nav class="flex flex-col space-y-4 text-lg">
+            <!-- Mobile Menu Links -->
+            <a href="#about" class="hover:text-var-accent text-var-text mobile-link" onclick="document.getElementById('closeMenu').click()">About</a>
+            <a href="#expertise" class="hover:text-var-accent text-var-text mobile-link" onclick="document.getElementById('closeMenu').click()">Expertise</a>
+            <a href="#focus" class="hover:text-var-accent text-var-text mobile-link" onclick="document.getElementById('closeMenu').click()">Focus Areas</a>
+            <a href="#stack" class="hover:text-var-accent text-var-text mobile-link" onclick="document.getElementById('closeMenu').click()">Tech Stack</a>
+            <a href="#projects" class="hover:text-var-accent text-var-text mobile-link" onclick="document.getElementById('closeMenu').click()">Projects</a>
+            <a href="#certs" class="hover:text-var-accent text-var-text mobile-link" onclick="document.getElementById('closeMenu').click()">Certifications</a>
+            <a href="#contact" class="hover:text-var-accent text-var-text mobile-link" onclick="document.getElementById('closeMenu').click()">Contact</a>
+        </nav>
+    </div>
+
+    <!-- Header (Fixed Navigation Bar) -->
+    <header id="mainHeader" role="banner" class="sticky top-0 z-50 header-bg border-b border-transparent shadow-var transition-colors duration-500">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center justify-between">
+            <a href="#top" class="flex items-center space-x-2 transition hover:opacity-80" aria-label="Return to top">
+                <!-- Brand Icon (Padlock) -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-var-accent-2 flex-shrink-0">
+                    <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                    <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                </svg>
+                <div class="flex flex-col leading-none">
+                    <span class="logo-text text-xl font-extrabold tracking-tight text-var-accent">secwexen</span>
+                    <!-- Title shown on desktop -->
+                    <span class="text-xs font-medium text-var-muted hidden sm:inline md:inline">Ethical Security Expert</span>
+                </div>
+            </a>
+            
+            <!-- Desktop Navigation Links -->
+            <nav class="hidden lg:flex space-x-6" aria-label="Primary">
+                <a href="#about" class="text-sm font-medium hover:text-var-accent-2 transition border-b-2 border-transparent py-1.5 active-link">About</a>
+                <a href="#expertise" class="text-sm font-medium hover:text-var-accent-2 transition border-b-2 border-transparent py-1.5 active-link">Expertise</a>
+                <a href="#focus" class="text-sm font-medium hover:text-var-accent-2 transition border-b-2 border-transparent py-1.5 active-link">Focus Areas</a>
+                <a href="#stack" class="text-sm font-medium hover:text-var-accent-2 transition border-b-2 border-transparent py-1.5 active-link">Tech Stack</a>
+                <a href="#projects" class="text-sm font-medium hover:text-var-accent-2 transition border-b-2 border-transparent py-1.5 active-link">Projects</a>
+                <a href="#certs" class="text-sm font-medium hover:text-var-accent-2 transition border-b-2 border-transparent py-1.5 active-link">Certifications</a>
+            </nav>
+
+            <div class="flex items-center space-x-3">
+                
+                <!-- Call to Action (CTA) Button -->
+                <a href="#contact" class="inline-flex items-center px-4 py-1.5 text-sm font-semibold rounded-xl bg-black text-white hover:bg-var-accent/90 transition-all duration-300 shadow-lg shadow-var-accent/30">
+                    Get in Touch
+                </a>
+                
+                <!-- Hamburger Button (Mobile) -->
+                <button id="openMenu" class="p-2 lg:hidden rounded-full hover:bg-var-panel/70 transition" aria-label="Open menu">
+                    <!-- Menu Icon -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main id="top" role="main">
+        <!-- Hero Section -->
+        <section class="py-16 md:py-24 border-b border-var-border bg-var-bg transition-colors duration-500" id="home"
+            style="
+                /* Background gradient for a high-tech feel */
+                background-image: radial-gradient(900px 380px at 15% -40%, rgba(77,181,255,.14), transparent 60%),
+                                  radial-gradient(900px 360px at 85% -30%, rgba(126,231,135,.12), transparent 60%);
+                background-attachment: fixed;
+            ">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-7 gap-6">
+                
+                <!-- Main Content -->
+                <div class="lg:col-span-4 rounded-xl p-6 bg-var-panel card-shadow transition-colors duration-500" aria-labelledby="hero-title">
+                    <h1 id="hero-title" class="text-3xl sm:text-4xl font-extrabold mb-2 leading-tight">
+                        Cybersecurity & Ethical Hacking Expert
+                    </h1>
+                    <p class="text-var-muted mb-4 text-lg">
+                        I specialize in ethical hacking, digital defense, and vulnerability assessment with a focus on proactive risk mitigation.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-4" aria-label="Key skills">
+                        <span class="px-3 py-1 text-xs font-semibold rounded-full text-var-accent-2 bg-var-accent-2/10 border border-var-accent-2/30">Offensive & Defensive</span>
+                        <span class="px-3 py-1 text-xs font-semibold rounded-full text-var-accent-2 bg-var-accent-2/10 border border-var-accent-2/30">OSCP Preparation</span>
+                        <span class="px-3 py-1 text-xs font-semibold rounded-full text-var-accent-2 bg-var-accent-2/10 border border-var-accent-2/30">Threat Hunting</span>
+                        <span class="px-3 py-1 text-xs font-semibold rounded-full text-var-accent-2 bg-var-accent-2/10 border border-var-accent-2/30">SIEM Automation</span>
+                        <span class="px-3 py-1 text-xs font-semibold rounded-full text-var-accent-2 bg-var-accent-2/10 border border-var-accent-2/30">Rust & Python</span>
+                    </div>
+                    
+                    <p class="mb-3">My priority is to identify and reduce risks before they are exploited. I am committed to protecting digital assets and anticipating adversarial tactics to stay ahead.</p>
+                    <p class="mb-4">Beyond security, I have a solid software engineering background. I design Python- and Rust-based tools for automation, threat intelligence, and SIEM optimization — delivering efficient, resilient, and intelligent defense solutions.</p>
+                    
+                    <p class="text-sm text-var-muted mb-4 border-l-2 border-var-accent pl-3">I've been pursuing this journey with passion since 2022.</p>
+                    
+                    <div class="flex flex-wrap gap-3 mt-4">
+                        <a class="flex items-center space-x-2 px-4 py-2 rounded-xl border border-var-border bg-var-bg hover:bg-var-bg/70 text-var-text font-semibold transition-all duration-300" href="https://secwexen.github.io/secwexen/" target="_blank" rel="noopener">
+                            <!-- Link Icon -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"/><path d="M17.65 6.35L12 12L6.35 17.65"/><path d="M6.35 6.35L12 12L17.65 17.65"/></svg>
+                            <span>Website</span>
+                        </a>
+                        <a class="flex items-center space-x-2 px-4 py-2 rounded-xl border border-var-border bg-var-bg hover:bg-var-bg/70 text-var-text font-semibold transition-all duration-300" href="https://github.com/secwexen" target="_blank" rel="noopener">
+                            <!-- GitHub Icon -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7a5.44 5.44 0 0 0-1.5-3.75 4.97 4.97 0 0 0-.17-3.96s-1.25-.39-4.14 1.57a15.42 15.42 0 0 0-8.15 0c-2.89-1.96-4.14-1.57-4.14-1.57A4.97 4.97 0 0 0 5 3.25a5.44 5.44 0 0 0-1.5 3.75c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                            <span>GitHub</span>
+                        </a>
+                        <a class="flex items-center space-x-2 px-4 py-2 rounded-xl border border-var-border bg-var-bg hover:bg-var-bg/70 text-var-text font-semibold transition-all duration-300" href="https://secwexen.github.io/secwexen/" target="_blank" rel="noopener">
+                            <!-- File Icon -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 22h16c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2H8l-4 4v16zM15 10H9M15 14H9M11 18H9"/></svg>
+                            <span>Portfolio</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Terminal Showcase -->
+                <div class="lg:col-span-3 rounded-xl p-6 bg-var-panel card-shadow transition-colors duration-500 h-full flex flex-col">
+                    <div class="flex items-center justify-between mb-4">
+                        <strong class="font-mono-jb text-sm">Terminal — captain@kalilinux: ~/missions</strong>
+                        <div class="flex space-x-2" aria-hidden="true">
+                            <!-- Terminal window buttons -->
+                            <span class="w-2 h-2 rounded-full bg-red-500"></span>
+                            <span class="w-2 h-2 rounded-full bg-yellow-500"></span>
+                            <span class="w-2 h-2 rounded-full bg-green-500"></span>
+                        </div>
+                    </div>
+                    <!-- Terminal Output Simulation Area -->
+                    <div class="font-mono-jb text-sm rounded-lg p-4 bg-var-panel-2 border border-var-border overflow-auto flex-grow h-64 lg:h-auto" role="region" aria-label="Simulation">
+                        <pre>
+┌──(<span class="text-var-accent">captain</span><span class="text-var-accent-2">㉿kalilinux</span>)-[~/missions]
+└─$ <span class="text-var-accent-2">sudo cybersecurity --analyze --reinforce</span>
+[sudo] password for captain: ********
+
+<span class="text-var-accent">[INFO]</span> Initializing cybersecurity module v2.4.7...
+[<span class="text-var-accent-2">✓</span>] Scanning system files... (completed in 3.2s)
+[<span class="text-var-accent-2">✓</span>] Network interfaces analyzed: eth0, wlan0
+[<span class="text-var-accent-2">✓</span>] Vulnerabilities identified: <span class="text-var-danger font-semibold">3 critical</span>, <span style="color:#ffd580">12 moderate</span>
+    ├─ CVE-2025-1423: Unpatched kernel exploit
+    ├─ CVE-2025-1876: OpenSSH misconfiguration
+    └─ CVE-2025-1999: Privilege escalation vector
+[<span class="text-var-accent-2">✓</span>] Reinforcement protocols executed:
+    ├─ Kernel patch applied
+    ├─ SSH hardened (key-only auth, port change)
+    └─ User privilege audit completed
+[<span class="text-var-accent-2">✓</span>] Firewall rules updated (iptables + nftables synced)
+[<span class="text-var-accent-2">✓</span>] SELinux policies enforced (strict mode)
+[<span class="text-var-accent-2">✓</span>] Logs archived and encrypted to /var/log/secure-archive/mission-1006.tar.gpg
+                            
+┌──(<span class="text-var-accent">captain</span><span class="text-var-accent-2">㉿kalilinux</span>)-[~/missions]
+└─$ echo "missions complete."
+                            
+<span class="cursor-blink"> </span>
+                        </pre>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-12 md:py-16 border-b border-var-border">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-2xl font-bold mb-4 border-b-2 border-var-accent-2/50 pb-1 inline-block">About</h2>
+                <p>All research and experiments are conducted in controlled environments under ethical frameworks and responsible disclosure principles. The goal is to detect risks early, reduce impact, strengthen systems, and make security measurable.</p>
+            </div>
+        </section>
+
+        <!-- Expertise Summary Section -->
+        <section id="expertise" class="py-12 md:py-16 border-b border-var-border">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-2xl font-bold mb-6 border-b-2 border-var-accent/50 pb-1 inline-block">Expertise Summary</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="p-4 rounded-xl bg-var-panel border border-var-border transition-all duration-300 hover:border-var-accent">
+                        <h3 class="text-lg font-semibold mb-1 text-var-accent">Offensive & Defensive Security</h3>
+                        <p class="text-sm text-var-muted">Red/Blue team simulations, vulnerability assessments, and exploit development.</p>
+                    </div>
+                    <div class="p-4 rounded-xl bg-var-panel border border-var-border transition-all duration-300 hover:border-var-accent">
+                        <h3 class="text-lg font-semibold mb-1 text-var-accent">Rust & Python Engineering</h3>
+                        <p class="text-sm text-var-muted">Tools for automation, threat intelligence, and SIEM optimization.</p>
+                    </div>
+                    <div class="p-4 rounded-xl bg-var-panel border border-var-border transition-all duration-300 hover:border-var-accent-2">
+                        <h3 class="text-lg font-semibold mb-1 text-var-accent-2">OSCP Prep | Threat Hunting | SIEM</h3>
+                        <p class="text-sm text-var-muted">Hands-on labs, log analytics, and detection engineering.</p>
+                    </div>
+                    <div class="p-4 rounded-xl bg-var-panel border border-var-border transition-all duration-300 hover:border-var-accent-2">
+                        <h3 class="text-lg font-semibold mb-1 text-var-accent-2">CTF Creator & Participant</h3>
+                        <p class="text-sm text-var-muted">Designing and hosting Jeopardy and Attack-Defense challenges.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Focus Areas Section -->
+        <section id="focus" class="py-12 md:py-16 border-b border-var-border">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-2xl font-bold mb-6 border-b-2 border-var-accent/50 pb-1 inline-block">Focus Areas & Current Learning Path</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                    <div class="p-4 rounded-xl bg-var-panel border border-var-border">
+                        <h3 class="text-lg font-semibold mb-2 text-var-accent">Offensive Security</h3>
+                        <ul class="list-disc ml-5 text-sm space-y-1 text-var-muted">
+                            <li>Penetration Testing (Web, Network, Wireless)</li>
+                            <li>Vulnerability assessment & exploit development</li>
+                            <li>Malware analysis & reverse engineering</li>
+                            <li>Red team simulation & adversary behavior analysis</li>
+                            <li>CTF challenge creation & hosting</li>
+                        </ul>
+                    </div>
+                    <div class="p-4 rounded-xl bg-var-panel border border-var-border">
+                        <h3 class="text-lg font-semibold mb-2 text-var-accent">Defensive Security</h3>
+                        <ul class="list-disc ml-5 text-sm space-y-1 text-var-muted">
+                            <li>Incident response & digital forensics</li>
+                            <li>Threat hunting & OSINT investigations</li>
+                            <li>SIEM automation & detection engineering</li>
+                            <li>Advanced threat modeling & risk assessment</li>
+                            <li>Zero Trust architecture design & implementation</li>
+                        </ul>
+                    </div>
+                    <div class="p-4 rounded-xl bg-var-panel border border-var-border">
+                        <h3 class="text-lg font-semibold mb-2 text-var-accent">Software & Systems</h3>
+                        <ul class="list-disc ml-5 text-sm space-y-1 text-var-muted">
+                            <li>Secure development (Rust, Python, Bash, C)</li>
+                            <li>Network protocol analysis (Wireshark, Scapy)</li>
+                            <li>Memory-safe systems with Rust</li>
+                            <li>Container & cloud security (Docker, Kubernetes, AWS, Azure, GCP)</li>
+                            <li>Security automation with CI/CD (Actions, GitLab CI, Jenkins)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tech Stack Section -->
+        <section id="stack" class="py-12 md:py-16 border-b border-var-border">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-2xl font-bold mb-6 border-b-2 border-var-accent-2/50 pb-1 inline-block">Technology Stack</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                    <div class="p-4 rounded-xl bg-var-panel border border-var-border">
+                        <h3 class="text-lg font-semibold mb-1 text-var-accent-2">Offensive Security</h3>
+                        <p class="text-sm text-var-muted">Metasploit, Metasploitable 2, Burp Suite, Nmap, SQLMap, Hydra, Gobuster, more.</p>
+                    </div>
+                    <div class="p-4 rounded-xl bg-var-panel border border-var-border">
+                        <h3 class="text-lg font-semibold mb-1 text-var-accent-2">Defensive & Monitoring</h3>
+                        <p class="text-sm text-var-muted">Splunk, ELK Stack, Wireshark, Suricata, Zeek, Wazuh.</p>
+                    </div>
+                    <div class="p-4 rounded-xl bg-var-panel border border-var-border">
+                        <h3 class="text-lg font-semibold mb-1 text-var-accent-2">Forensics</h3>
+                        <p class="text-sm text-var-muted">Autopsy, Volatility, FTK Imager, Binwalk, Ghidra, IDA Free.</p>
+                    </div>
+                    <div class="p-4 rounded-xl bg-var-panel border border-var-border">
+                        <h3 class="text-lg font-semibold mb-1 text-var-accent">Programming</h3>
+                        <p class="text-sm text-var-muted">Rust, Python, Bash, C, PowerShell.</p>
+                    </div>
+                    <div class="p-4 rounded-xl bg-var-panel border border-var-border">
+                        <h3 class="text-lg font-semibold mb-1 text-var-accent">Cloud & Infrastructure</h3>
+                        <p class="text-sm text-var-muted">Docker, Kubernetes, AWS, Azure, GCP.</p>
+                    </div>
+                    <div class="p-4 rounded-xl bg-var-panel border border-var-border">
+                        <h3 class="text-lg font-semibold mb-1 text-var-accent">OSINT Tools</h3>
+                        <p class="text-sm text-var-muted">Maltego, theHarvester, SpiderFoot, Shodan, Recon-ng, FOCA, Google Dorks, OSINT Framework.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Hardware Section -->
+        <section id="hardware" class="py-12 md:py-16 border-b border-var-border">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-2xl font-bold mb-4 border-b-2 border-var-accent/50 pb-1 inline-block">Hardware & Security Toolkit</h2>
+                <p class="text-var-muted mb-4">Specialized hardware used strictly in controlled lab environments for ethical research.</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="p-4 rounded-xl bg-var-panel border border-var-border">
+                        <h3 class="text-lg font-semibold mb-1">Flipper Zero</h3>
+                        <small class="text-var-muted">RF/IR/NFC exploration and training</small>
+                    </div>
+                    <div class="p-4 rounded-xl bg-var-panel border border-var-border">
+                        <h3 class="text-lg font-semibold mb-1">HackRF One</h3>
+                        <small class="text-var-muted">SDR and protocol analysis</small>
+                    </div>
+                    <div class="p-4 rounded-xl bg-var-panel border border-var-border">
+                        <h3 class="text-lg font-semibold mb-1">Proxmark3 RDV4</h3>
+                        <small class="text-var-muted">RFID security research</small>
+                    </div>
+                    <div class="p-4 rounded-xl bg-var-panel border border-var-border">
+                        <h3 class="text-lg font-semibold mb-1">WiFi Pineapple</h3>
+                        <small class="text-var-muted">Wireless security testing</small>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-12 md:py-16 border-b border-var-border">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-2xl font-bold mb-6 border-b-2 border-var-accent-2/50 pb-1 inline-block">Projects & Contributions</h2>
+                
+                <!-- Main Project -->
+                <div class="p-6 rounded-xl bg-var-panel border border-var-border mb-6">
+                    <h3 class="text-xl font-bold mb-2 text-var-accent-2">Obscuron — Advanced Cybersecurity Framework</h3>
+                    <p class="text-var-muted mb-4">Modular platform for red teams, analysts, and incident responders. Provides system analysis, memory forensics, and controlled attack operations.</p>
+                    
+                    <div class="grid grid-cols-1 sm:grid-cols-[180px_1fr] gap-2 text-sm mb-4">
+                        <div class="text-var-muted font-medium">Status</div><div class="font-mono-jb">v1.0.0 — Actively maintained</div>
+                        <div class="text-var-muted font-medium">License</div><div class="font-mono-jb">Apache-2.0</div>
+                    </div>
+                    
+                    <a class="inline-flex items-center space-x-2 px-4 py-2 rounded-lg border border-var-border bg-var-bg hover:bg-var-bg/70 text-var-text font-semibold transition-all duration-300" href="https://github.com/secwexen" target="_blank" rel="noopener">
+                        <!-- Link Icon -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.74 1.74"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+                        <span>Source Code</span>
+                    </a>
+                </div>
+                
+                <!-- Achievements & Ongoing -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="p-4 rounded-xl bg-var-panel border border-var-border">
+                        <h3 class="text-lg font-semibold mb-2 text-var-accent">Achievements & Contributions</h3>
+                        <ul class="list-disc ml-5 text-sm space-y-1 text-var-muted">
+                            <li>Research in network security; developed new vulnerability scenarios</li>
+                            <li>Built new Rust modules for Obscuron</li>
+                            <li>Published technical notes on malware reverse engineering & protocol analysis</li>
+                            <li>Performed vulnerability assessments in lab and authored PoC exploits</li>
+                            <li>Designed CTF challenges adopted by local security communities</li>
+                        </ul>
+                    </div>
+                    <div class="p-4 rounded-xl bg-var-panel border border-var-border">
+                        <h3 class="text-lg font-semibold mb-2 text-var-accent">Ongoing Projects</h3>
+                        <ul class="list-disc ml-5 text-sm space-y-1 text-var-muted">
+                            <li>Rust-based security tooling for automation</li>
+                            <li>Advanced malware analysis & reverse engineering</li>
+                            <li>OSCP preparation & HackTheBox labs</li>
+                            <li>New CTF challenges for red team simulations</li>
+                            <li>Threat hunting automation & SIEM data analytics</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Certifications Section -->
+        <section id="certs" class="py-12 md:py-16 border-b border-var-border">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-2xl font-bold mb-6 border-b-2 border-var-accent/50 pb-1 inline-block">Certification Goals & Academic Focus</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="p-4 rounded-xl bg-var-panel border border-var-border">
+                        <h3 class="text-lg font-semibold mb-2 text-var-accent">Planned Certifications</h3>
+                        <ul class="list-disc ml-5 text-sm space-y-1 text-var-muted">
+                            <li>**OSCP** — Offensive Security Certified Professional</li>
+                            <li>**CEH** — Certified Ethical Hacker</li>
+                            <li>**GSEC** — GIAC Security Essentials</li>
+                            <li>**CISSP** — Information Systems Security</li>
+                            <li>**CompTIA Security+** — Foundational knowledge</li>
+                        </ul>
+                    </div>
+                    <div class="p-4 rounded-xl bg-var-panel border border-var-border">
+                        <h3 class="text-lg font-semibold mb-2 text-var-accent">Academic Focus</h3>
+                        <ul class="list-disc ml-5 text-sm space-y-1 text-var-muted">
+                            <li>Secure systems design, malware analysis, incident response</li>
+                            <li>MITRE ATT&CK & NIST frameworks — lab applications</li>
+                            <li>Continuous learning through CTFs & collaborative projects</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact & Links Section -->
+        <section id="contact" class="py-12 md:py-16 border-b border-var-border">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-2xl font-bold mb-6 border-b-2 border-var-accent-2/50 pb-1 inline-block">Contact & Links</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="p-4 rounded-xl bg-var-panel border border-var-border">
+                        <h3 class="text-lg font-semibold mb-2 text-var-accent-2">Online Presence</h3>
+                        <div class="space-y-2 text-sm">
+                            <div class="flex flex-col sm:flex-row sm:space-x-4"><div class="text-var-muted font-medium sm:w-32">Website</div><div><a href="https://secwexen.github.io/secwexen/" target="_blank" rel="noopener" class="hover:text-var-accent transition duration-300">secwexen.github.io/secwexen/</a></div></div>
+                            <div class="flex flex-col sm:flex-row sm:space-x-4"><div class="text-var-muted font-medium sm:w-32">GitHub</div><div><a href="https://github.com/secwexen" target="_blank" rel="noopener" class="hover:text-var-accent transition duration-300">github.com/secwexen</a></div></div>
+                            <div class="flex flex-col sm:flex-row sm:space-x-4"><div class="text-var-muted font-medium sm:w-32">CTF Writeups</div><div><a href="https://github.com/secwexen/secwexen/tree/main/portfolio" target="_blank" rel="noopener" class="hover:text-var-accent transition duration-300">.../portfolio</a></div></div>
+                            <div class="flex flex-col sm:flex-row sm:space-x-4"><div class="text-var-muted font-medium sm:w-32">Research Notes</div><div><a href="https://github.com/secwexen/secwexen/tree/main/reflections" target="_blank" rel="noopener" class="hover:text-var-accent transition duration-300">.../reflections</a></div></div>
+                        </div>
+                    </div>
+                    <div class="p-4 rounded-xl bg-var-panel border border-var-border">
+                        <h3 class="text-lg font-semibold mb-2 text-var-accent-2">Secure Contact</h3>
+                        <div class="space-y-2 text-sm">
+                            <div class="flex flex-col sm:flex-row sm:space-x-4"><div class="text-var-muted font-medium sm:w-32">Email</div><div class="font-mono-jb">Coming soon</div></div>
+                            <div class="flex flex-col sm:flex-row sm:space-x-4"><div class="text-var-muted font-medium sm:w-32">PGP Key</div><div class="text-var-muted">Coming soon — for secure communication</div></div>
+                        </div>
+                        <p class="mt-4 text-sm text-var-muted">
+                            For collaboration or questions, please reach out via GitHub.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Ethics & Legal Section -->
+        <section id="ethics" class="py-12 md:py-16">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-xl font-bold mb-4">Ethics & Legal Notice</h2>
+                <ul class="list-disc ml-5 text-sm space-y-1 text-var-muted">
+                    <li>All research and experiments are conducted in controlled environments.</li>
+                    <li>Strict adherence to responsible disclosure principles.</li>
+                    <li>No illegal activities — no support or engagement in unlawful behavior.</li>
+                    <li>Always learning, defending, and innovating responsibly.</li>
+                    <li>The logo is an abstraction of a closed padlock, symbolizing digital security.</li>
+                </ul>
+                <p class="mt-6 text-sm">
+                    ⭐ If you find my projects useful, don’t forget to give them a star!<br>
+                    👥 Also, consider following me to stay updated on my latest cybersecurity tools and write-ups.<br>
+                    🤝 For collaboration or inquiries, please reach out via my portfolio or GitHub.<br>
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer role="contentinfo" class="py-6 border-t border-var-border bg-var-bg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row justify-between items-center text-sm text-var-muted">
+            <div>© 2026 secwexen — All Rights Reserved | https://secwexen.github.io/secwexen/</div>
+            <div class="mt-2 sm:mt-0 font-semibold text-var-accent">Created & Maintained by secwexen</div>
+        </div>
+    </footer>
+
+    <!-- JavaScript: UX Helpers -->
+    <script>
+        // Function to dynamically get the header height for accurate scrolling offset
+        const getHeaderHeight = () => {
+            return document.getElementById('mainHeader').offsetHeight;
+        };
+
+        const sections = Array.from(document.querySelectorAll('main section'));
+        const navLinks = Array.from(document.querySelectorAll('.active-link'));
+        const mobileLinks = Array.from(document.querySelectorAll('.mobile-link')); 
+        const allLinks = Array.from(document.querySelectorAll('a[href^="#"]'));
+
+        /**
+         * Updates the active link in the navigation based on the current scroll position.
+         */
+        const updateActiveLink = () => {
+            const currentHeaderHeight = getHeaderHeight();
+            // Offset scroll position to account for the fixed header
+            const scrollPos = window.scrollY + currentHeaderHeight + 50; 
+            let currentId = sections[0]?.id;
+            
+            // Determine which section is currently in view
+            for (const sec of sections) {
+                if (scrollPos >= sec.offsetTop && scrollPos < sec.offsetTop + sec.offsetHeight) {
+                    currentId = sec.id;
+                    break;
+                }
+            }
+            
+            // Highlight desktop links
+            navLinks.forEach(link => {
+                link.classList.remove('text-var-accent', 'border-var-accent');
+                link.classList.add('text-var-text', 'border-transparent');
+
+                if (link.getAttribute('href') === '#' + currentId) {
+                    link.classList.add('text-var-accent', 'border-var-accent');
+                    link.classList.remove('text-var-text', 'border-transparent');
+                }
+            });
+
+            // Highlight mobile links
+            mobileLinks.forEach(link => {
+                link.classList.remove('font-bold', 'text-var-accent-2');
+                link.classList.add('font-normal', 'text-var-text');
+                
+                if (link.getAttribute('href') === '#' + currentId) {
+                    link.classList.add('font-bold', 'text-var-accent-2');
+                    link.classList.remove('font-normal', 'text-var-text');
+                }
+            });
+        };
+
+        /**
+         * Handles smooth scrolling to anchor links with correct header offset.
+         */
+        const handleSmoothScroll = (e) => {
+            const a = e.currentTarget;
+            const id = a.getAttribute('href').substring(1);
+            const el = document.getElementById(id);
+            if (!el) return;
+            
+            e.preventDefault();
+            
+            // Close menu if it's a mobile link click
+            if (a.classList.contains('mobile-link')) {
+                closeMenu();
+                // Start scrolling after the menu closing animation finishes
+                setTimeout(() => {
+                    window.scrollTo({ top: el.offsetTop - getHeaderHeight(), behavior: 'smooth' });
+                    history.replaceState(null, '', '#' + id);
+                }, 100); 
+            } else {
+                window.scrollTo({ top: el.offsetTop - getHeaderHeight(), behavior: 'smooth' });
+                history.replaceState(null, '', '#' + id);
+            }
+        };
+
+        // Attach event listeners
+        allLinks.forEach(a => a.addEventListener('click', handleSmoothScroll));
+        window.addEventListener('scroll', updateActiveLink, { passive: true });
+        updateActiveLink(); // Initial call to set the active link
+
+        // Mobile Menu Logic
+        const mobileMenu = document.getElementById('mobileMenu');
+        const openMenuBtn = document.getElementById('openMenu');
+        const closeMenuBtn = document.getElementById('closeMenu');
+        const backdrop = document.getElementById('mobileMenuBackdrop');
+
+        const openMenu = () => {
+            document.body.classList.add('no-scroll');
+            mobileMenu.classList.remove('translate-x-full');
+            mobileMenu.classList.add('translate-x-0');
+            backdrop.classList.remove('opacity-0', 'pointer-events-none');
+            backdrop.classList.add('opacity-100', 'pointer-events-auto');
+        };
+
+        const closeMenu = () => {
+            document.body.classList.remove('no-scroll');
+            mobileMenu.classList.remove('translate-x-0');
+            mobileMenu.classList.add('translate-x-full');
+            backdrop.classList.remove('opacity-100', 'pointer-events-auto');
+            backdrop.classList.add('opacity-0', 'pointer-events-none');
+        };
+
+        openMenuBtn.addEventListener('click', openMenu);
+        closeMenuBtn.addEventListener('click', closeMenu);
+        backdrop.addEventListener('click', closeMenu); // Close when clicking the backdrop
+
+        // Security: Add noopener to external links
+        document.querySelectorAll('a[target="_blank"]').forEach(a => {
+            if (!a.rel.includes('noopener')) a.rel = (a.rel ? a.rel + ' ' : '') + 'noopener';
+        });
+
+        // Header Shrink Effect on Scroll
+        const header = document.getElementById('mainHeader');
+        let scrollTimeout;
+
+        const handleHeaderScroll = () => {
+            // Threshold for header shrink effect
+            if (window.scrollY > 60) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+            
+            // Debounce active link update to optimize performance
+            if (scrollTimeout) clearTimeout(scrollTimeout);
+            scrollTimeout = setTimeout(updateActiveLink, 50);
+        };
+
+        window.addEventListener('scroll', handleHeaderScroll, { passive: true });
+        handleHeaderScroll(); // Check scroll position on initial load
+        
+    </script>
+</body>
+</html>

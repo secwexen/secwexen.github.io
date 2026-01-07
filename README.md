@@ -4,3 +4,7 @@ This repository hosts my personal cybersecurity website, featuring research, tec
 The site serves as a central hub for my work in offensive security, reverse engineering, and software development.
 
 Built with GitHub Pages.
+
+---
+
+© 2026 secwexen — All Rights Reserved.

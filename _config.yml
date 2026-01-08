@@ -1,7 +1,7 @@
 title: "Secwexen"
 description: "Offensive security research, notes, writeups, and technical articles."
 baseurl: ""
-url: "https://secwexen.github.io"
+url: "https://secwexen.github.io/"
 
 theme: minima
 

@@ -1,3 +1,9 @@
+---
+layout: default
+title: About
+permalink: /about/
+---
+
 # About Me
 
 Hello! I'm **secwexen**, a cybersecurity expert.  

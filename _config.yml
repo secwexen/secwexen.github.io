@@ -1,25 +1,57 @@
+# Site Information
 title: "Secwexen"
 description: "Offensive security research, notes, writeups, and technical articles."
-baseurl: ""
+baseurl: "" # root
 url: "https://secwexen.github.io/"
 
+# Theme
 theme: minima
 
+# Author Information
 author:
   name: "secwexen"
+  github_username: "secwexen"
 
+# Markdown & Syntax Highlighting
 markdown: kramdown
 highlighter: rouge
 
+# Plugins
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-sitemap
 
-# Navigation (header links)
+# Navigation / Header Links
 header_pages:
-  - index.md
+  - index.html
   - about.md
-  - blog/index.md
-  - research/index.md
-  - writeups/index.md
-  - projects/index.md
+
+# Defaults for Pages
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "secwexen"
+      seo: true
+
+# SEO Enhancements
+social_links:
+  - platform: "github"
+    url: "https://github.com/secwexen"
+
+# Exclude these files from build
+exclude:
+  - README.md
+  - LICENSE-CONTENT
+  - .github
+  - .gitignore
+  - node_modules
+  - vendor
+
+# Build Settings
+incremental: false
+future: true

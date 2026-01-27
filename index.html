@@ -135,20 +135,12 @@
 
         /* Header height control for the scroll effect */
         #mainHeader {
-            height: 64px; /* Default height (h-16) */
-            transition: all 0.3s ease-in-out;
-        }
-        #mainHeader.scrolled {
-            height: 56px; /* Reduced height after scrolling (h-14) */
-            border-bottom: 1px solid var(--border);
-        }
-        #mainHeader.scrolled .logo-text {
-            font-size: 1.1rem; /* Smaller font on scroll */
-            transition: font-size 0.3s ease-in-out;
-        }
+    height: 64px;
+    transition: height 0.3s ease-in-out, border-bottom 0.3s ease-in-out;
+                    }
         #mainHeader .logo-text {
-            transition: font-size 0.3s ease-in-out;
-        }
+    transition: font-size 0.3s ease-in-out;
+                    }
     </style>
     
 </head>

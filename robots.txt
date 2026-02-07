@@ -1,0 +1,13 @@
+# robots.txt for secwexen.github.io
+
+# Allow all search engines
+User-agent: *
+Disallow: /private/
+Disallow: /internal/
+Allow: /
+
+# Sitemap location
+Sitemap: https://secwexen.github.io/sitemap.xml
+
+# Optional crawl delay  
+Crawl-delay: 10

@@ -2,12 +2,8 @@
 
 # Allow all search engines
 User-agent: *
-Disallow: /private/
-Disallow: /internal/
-Allow: /
+Disallow: /secwexen.github.io/private/
+Disallow: /secwexen.github.io/internal/
 
 # Sitemap location
 Sitemap: https://secwexen.github.io/sitemap.xml
-
-# Optional crawl delay  
-Crawl-delay: 10

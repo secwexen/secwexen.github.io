@@ -4,6 +4,8 @@
 User-agent: *
 Disallow: /secwexen.github.io/private/
 Disallow: /secwexen.github.io/internal/
+Allow: /secwexen.github.io/public/
+Allow: /secwexen.github.io/assets/
 
 # Sitemap location
 Sitemap: https://secwexen.github.io/sitemap.xml

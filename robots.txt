@@ -3,10 +3,11 @@
 
 # Allow all search engines
 User-agent: *
-Disallow: /secwexen.github.io/private/
-Disallow: /secwexen.github.io/internal/
-Allow: /secwexen.github.io/docs/
-Allow: /secwexen.github.io/assets/
+Disallow: /private/
+Disallow: /internal/
+Allow: /docs/
+Allow: /assets/
+Allow: /
 
 # Sitemap location
 Sitemap: https://secwexen.github.io/sitemap.xml

@@ -9,4 +9,10 @@
     <loc>https://secwexen.github.io/assets/</loc>
   </url>
 
+  <url>
+    <loc>https://secwexen.github.io/</loc>
+    <lastmod>2026-02-10</lastmod>
+    <priority>1.0</priority>
+  </url>
+
 </urlset>

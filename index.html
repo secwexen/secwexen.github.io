@@ -172,19 +172,17 @@
 </head>
 <body class="font-inter bg-var-bg text-var-text transition-colors duration-500 min-h-screen">
     
-    <!-- Mobile Menu Backdrop -->
     <div id="mobileMenuBackdrop" class="fixed inset-0 z-40 bg-black/50 transition-opacity duration-300 opacity-0 pointer-events-none lg:hidden"></div>
 
-    <!-- Mobile Menu (Off-Canvas/Sidebar) -->
     <div id="mobileMenu" class="fixed inset-y-0 right-0 z-50 transform translate-x-full transition-transform duration-300 ease-in-out bg-var-panel p-6 shadow-2xl w-80 max-w-[80vw] lg:hidden overflow-y-auto">
         <div class="flex justify-end mb-8">
             <button id="closeMenu" class="text-xl p-2 rounded-full hover:bg-var-bg/30 text-var-text transition" aria-label="Close menu">
-                <!-- Close Icon (X) -->
+
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6L6 18M6 6l12 12"/></svg>
             </button>
         </div>
         <nav class="flex flex-col space-y-4 text-lg">
-            <!-- Mobile Menu Links -->
+
             <a href="#about" class="hover:text-var-accent text-var-text mobile-link" onclick="document.getElementById('closeMenu').click()">About</a>
             <a href="#expertise" class="hover:text-var-accent text-var-text mobile-link" onclick="document.getElementById('closeMenu').click()">Expertise</a>
             <a href="#focus" class="hover:text-var-accent text-var-text mobile-link" onclick="document.getElementById('closeMenu').click()">Focus Areas</a>
@@ -195,18 +193,16 @@
         </nav>
     </div>
 
-    <!-- Header (Fixed Navigation Bar) -->
     <header id="mainHeader" role="banner" class="sticky top-0 z-50 header-bg border-b border-transparent shadow-var transition-colors duration-500">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center justify-between">
             <a href="#top" class="flex items-center space-x-2 transition hover:opacity-80" aria-label="Return to top">
                 <div class="flex flex-col leading-none">
                     <span class="logo-text text-xl font-extrabold tracking-tight text-var-accent">Secwexen</span>
-                    <!-- Title shown on desktop -->
+
                     <span class="text-xs font-medium text-var-muted hidden sm:inline md:inline">Cybersecurity Expert</span>
                 </div>
             </a>
             
-            <!-- Desktop Navigation Links -->
             <nav class="hidden lg:flex space-x-6" aria-label="Primary">
                 <a href="#about" class="text-sm font-medium hover:text-var-accent-2 transition border-b-2 border-transparent py-1.5 active-link">About</a>
                 <a href="#expertise" class="text-sm font-medium hover:text-var-accent-2 transition border-b-2 border-transparent py-1.5 active-link">Expertise</a>
@@ -218,14 +214,12 @@
 
             <div class="flex items-center space-x-3">
                 
-                <!-- Call to Action (CTA) Button -->
                 <a href="#contact" class="inline-flex items-center px-4 py-1.5 text-sm font-semibold rounded-xl bg-black text-white hover:bg-var-accent/90 transition-all duration-300 shadow-lg shadow-var-accent/30">
                     Get in Touch
                 </a>
                 
-                <!-- Hamburger Button (Mobile) -->
                 <button id="openMenu" class="p-2 lg:hidden rounded-full hover:bg-var-panel/70 transition" aria-label="Open menu">
-                    <!-- Menu Icon -->
+
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
                 </button>
             </div>
@@ -233,7 +227,7 @@
     </header>
 
     <main id="top" role="main">
-        <!-- Hero Section -->
+
         <section class="py-16 md:py-24 border-b border-var-border bg-var-bg transition-colors duration-500" id="home"
             style="
                 /* Background gradient for a high-tech feel */
@@ -243,7 +237,6 @@
             ">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-7 gap-6">
                 
-                <!-- Main Content -->
                 <div class="lg:col-span-4 rounded-xl p-6 bg-var-panel card-shadow transition-colors duration-500" aria-labelledby="hero-title">
                     <h1 id="hero-title" class="text-3xl sm:text-4xl font-extrabold mb-2 leading-tight">
                         Cybersecurity Expert
@@ -265,35 +258,34 @@
                     
                     <div class="flex flex-wrap gap-3 mt-4">
                         <a class="flex items-center space-x-2 px-4 py-2 rounded-xl border border-var-border bg-var-bg hover:bg-var-bg/70 text-var-text font-semibold transition-all duration-300" href="https://secwexen.github.io/" target="_blank" rel="noopener">
-                            <!-- Link Icon -->
+
                             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 010 20M12 2a15 15 0 000 20"/></svg>
                             <span>Website</span>
                         </a>
                         <a class="flex items-center space-x-2 px-4 py-2 rounded-xl border border-var-border bg-var-bg hover:bg-var-bg/70 text-var-text font-semibold transition-all duration-300" href="https://github.com/secwexen" target="_blank" rel="noopener">
-                            <!-- GitHub Icon -->
+
                             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8a8 8 0 005.47 7.59c.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.13 0 0 .67-.21 2.2.82A7.59 7.59 0 018 4.48c.68.003 1.36.092 2 .27 1.52-1.03 2.2-.82 2.2-.82.44 1.11.16 1.93.08 2.13.51.56.82 1.28.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.19 0 .21.15.46.55.38A8 8 0 008 0z"/></svg>
                             <span>GitHub</span>
                         </a>
                         <a class="flex items-center space-x-2 px-4 py-2 rounded-xl border border-var-border bg-var-bg hover:bg-var-bg/70 text-var-text font-semibold transition-all duration-300" href="https://github.com/secwexen/secwexen.github.io" target="_blank" rel="noopener">
-                            <!-- GitHub Repository Icon -->
+
                             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/></svg>
                             <span>GitHub Repository</span>
                         </a>
                     </div>
                 </div>
 
-                <!-- Terminal Showcase -->
                 <div class="lg:col-span-3 rounded-xl p-6 bg-var-panel card-shadow transition-colors duration-500 h-full flex flex-col w-[118%]">
                     <div class="flex items-center justify-between mb-4">
                         <strong class="font-mono-jb text-sm">Terminal — secwexen@kalilinux: ~/system-audit</strong>
                         <div class="flex space-x-2" aria-hidden="true">
-                            <!-- Terminal window buttons -->
+
                             <span class="w-2 h-2 rounded-full bg-red-500"></span>
                             <span class="w-2 h-2 rounded-full bg-yellow-500"></span>
                             <span class="w-2 h-2 rounded-full bg-green-500"></span>
                         </div>
                     </div>
-                    <!-- Terminal Output Simulation Area -->
+
                     <div class="font-mono-jb text-sm rounded-lg p-4 bg-var-panel-2 border border-var-border overflow-auto flex-grow h-64 lg:h-auto" role="region" aria-label="Simulation"><pre>
 ┌──(<span class="text-var-accent">secwexen</span><span class="text-var-accent-2">㉿kalilinux</span>)-[~/system-audit]
 └─$ <span class="text-var-accent-2">sudo lynis audit system</span>
@@ -324,7 +316,6 @@
             </div>
         </section>
 
-        <!-- Expertise Summary Section -->
         <section id="expertise" class="py-12 md:py-16 border-b border-var-border">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <h2 class="text-2xl font-bold mb-6 border-b-2 border-var-accent/50 pb-1 inline-block">Expertise Summary</h2>
@@ -349,7 +340,6 @@
             </div>
         </section>
 
-        <!-- Focus Areas & Learning Path Section -->
         <section id="focus" class="py-12 md:py-16 border-b border-var-border">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <h2 class="text-2xl font-bold mb-6 border-b-2 border-var-accent/50 pb-1 inline-block">Focus Areas & Learning Path</h2>
@@ -388,7 +378,6 @@
             </div>
         </section>
 
-        <!-- Skills Matrix Section -->
         <section id="stack" class="py-12 md:py-16 border-b border-var-border">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <h2 class="text-2xl font-bold mb-6 border-b-2 border-var-accent-2/50 pb-1 inline-block">Skills Matrix</h2>
@@ -421,12 +410,10 @@
             </div>
         </section>
 
-        <!-- Selected Projects Section -->
         <section id="projects" class="py-12 md:py-16 border-b border-var-border">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <h2 class="text-2xl font-bold mb-6 border-b-2 border-var-accent-2/50 pb-1 inline-block">Selected Projects</h2>
                 
-                <!-- Main Project -->
                 <div class="p-6 rounded-xl bg-var-panel border border-var-border mb-6">
                     <h3 class="text-xl font-bold mb-2 text-var-accent-2">AAPP‑MART — Autonomous Attack Path Prediction & Multi‑Agent Red Team Simulation Engine</h3>
                     <p class="text-var-muted mb-4">AI‑driven engine for predicting attack paths and simulating them with autonomous red‑team agents. Designed for continuous security testing and adversarial analysis.</p>
@@ -437,14 +424,13 @@
                     </div>
                     
                     <a class="inline-flex items-center space-x-2 px-4 py-2 rounded-lg border border-var-border bg-var-bg hover:bg-var-bg/70 text-var-text font-semibold transition-all duration-300" href="https://github.com/secwexen/aapp-mart" target="_blank" rel="noopener">
-                        <!-- Link Icon -->
+
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.74 1.74"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
                         <span>Source Code</span>
                     </a>
                     <p class="text-xs text-var-muted mt-2">Note: The framework is designed for research and educational purposes. Use responsibly in authorized environments only.</p>
                 </div>
                 
-                <!-- Achievements & Contributions -->
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div class="p-4 rounded-xl bg-var-panel border border-var-border">
                         <h3 class="text-lg font-semibold mb-2 text-var-accent">Achievements & Contributions</h3>
@@ -470,7 +456,6 @@
             </div>
         </section>
         
-        <!-- Certifications Goals Section -->
         <section id="certs" class="py-12 md:py-16 border-b border-var-border">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <h2 class="text-2xl font-bold mb-6 border-b-2 border-var-accent/50 pb-1 inline-block">Certification Goals</h2>
@@ -496,7 +481,6 @@
             </div>
         </section>
 
-        <!-- Contact & Professional Links Section -->
         <section id="contact" class="py-12 md:py-16 border-b border-var-border">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <h2 class="text-2xl font-bold mb-6 border-b-2 border-var-accent-2/50 pb-1 inline-block">Contact & Professional Links</h2>
@@ -521,7 +505,6 @@
             </div>
         </section>
         
-        <!-- Code of Ethics & Legal Notice Section -->
         <section id="ethics" class="py-12 md:py-16">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <h2 class="text-xl font-bold mb-4">Code of Ethics & Legal Notice</h2>
@@ -542,7 +525,6 @@ If you find my work valuable, you may support or follow the projects on GitHub, 
         
     </main>
 
-    <!-- Footer -->
     <footer role="contentinfo" class="py-6 border-t border-var-border bg-var-bg">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row justify-between items-center text-sm text-var-muted">
             <div>© 2026 secwexen. All Rights Reserved. Content Licensed under <a href="https://github.com/secwexen/secwexen.github.io/blob/main/LICENSE" target="_blank">CC BY 4.0</a></div>
@@ -550,7 +532,6 @@ If you find my work valuable, you may support or follow the projects on GitHub, 
         </div>
     </footer>
 
-    <!-- JavaScript -->
     <script>
         // Function to dynamically get the header height for accurate scrolling offset
         const getHeaderHeight = () => {

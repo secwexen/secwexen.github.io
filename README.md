@@ -1,3 +1,5 @@
+<!-- Cybersecurity Expert | Red & Blue Team Operations | Threat Hunting | Ethical Hacking | SIEM/SOC | Network Security -->
+
 # secwexen.github.io
 
 This repository hosts my personal cybersecurity website, featuring research, technical notes, writeups, tools, and long‑form articles.  

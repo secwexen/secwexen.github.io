@@ -1,4 +1,4 @@
-<!-- Cybersecurity Expert | Red & Blue Team Operations | Threat Hunting | Ethical Hacking | SIEM/SOC | Network Security -->
+<!-- Cybersecurity Research | Offensive Security | Reverse Engineering | Malware Analysis | Penetration Testing | Red Team | Exploit Development | CTF Writeups -->
 
 # secwexen.github.io
 

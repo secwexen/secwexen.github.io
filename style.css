@@ -1,0 +1,55 @@
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap');
+        
+        /* Custom font classes */
+        .font-inter { font-family: 'Inter', system-ui, sans-serif; }
+        .font-mono-jb { font-family: 'JetBrains Mono', ui-monospace, monospace; }
+
+        /* Custom color definitions */
+        /* Variables set specifically for the DARK theme */
+        :root {
+            --bg: #0b0f14;
+            --bg-soft: #101621;
+            --panel: #131a26;
+            --panel-2: #0f141c;
+            --text: #e8edf6;
+            --muted: #9fb3c8;
+            --border: #1f2a3a;
+            --accent: #ff4d4d; /* Red */
+            --accent-2: #4db5ff; /* Blue */
+            --danger: #ff7676;
+            --shadow: rgba(0,0,0,0.35);
+        }
+
+        /* Applying variables via utility classes */
+        .bg-var-bg { background-color: var(--bg); }
+        .bg-var-panel { background-color: var(--panel); }
+        .bg-var-panel-2 { background-color: var(--panel-2); }
+        .text-var-text { color: var(--text); }
+        .text-var-muted { color: var(--muted); }
+        .border-var-border { border-color: var(--border); }
+        .text-var-accent { color: var(--accent); }
+        .text-var-accent-2 { color: var(--accent-2); }
+        .text-var-danger { color: var(--danger); }
+        
+        /* Header background with blur effect */
+        .header-bg {
+            background-color: var(--bg-soft); 
+            backdrop-filter: saturate(140%) blur(8px);
+        }
+        .shadow-var { box-shadow: 0 6px 20px var(--shadow); }
+        .card-shadow { box-shadow: 0 10px 30px var(--shadow); }
+
+        /* CSS for smooth scroll handling and fixed header */
+        .no-scroll {
+            overflow: hidden;
+            height: 100vh;
+        }
+
+        /* Header height control for the scroll effect */
+       #mainHeader {
+    height: 64px;
+    transition: all 0.3s ease-in-out;
+}
+#mainHeader .logo-text {
+    transition: font-size 0.3s ease-in-out;
+}

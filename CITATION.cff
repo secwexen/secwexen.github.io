@@ -1,13 +1,14 @@
 cff-version: 1.2.0
 title: "Secwexen Portfolio"
 message: "If you use this resource, please cite it as below."
+license: "Creative Commons Attribution 4.0 International (CC BY 4.0)"
 type: generic
 authors:
   - name: "Secwexen"
 repository-code: "https://github.com/secwexen/secwexen.github.io"
 url: "https://github.com/secwexen.github.io/"
 abstract: >
-  This repository hosts my personal cybersecurity website, featuring research, technical notes, writeups, tools, and long‑form articles.
+  This website hosts my personal cybersecurity portfolio. It features original research, technical notes, writeups, tools, and long-form articles across multiple domains of information security.
 keywords:
   - Penetration Testing
   - Threat Hunting

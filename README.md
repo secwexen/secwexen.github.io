@@ -7,8 +7,6 @@ The site serves as a central hub for my work in offensive security, reverse engi
 
 Built with GitHub Pages.
 
----
-
 ## License & Copyright
 
 Copyright © 2026 secwexen. 

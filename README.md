@@ -11,7 +11,7 @@ Built with GitHub Pages.
 
 ## License & Copyright
 
-Copyright © 2026 Secwexen. All Rights Reserved.  
+Copyright © 2026 Secwexen. 
 
 - **Content License:** CC BY 4.0  
   You are free to share and adapt the written content, provided that proper attribution is given.  

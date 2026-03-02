@@ -9,4 +9,12 @@ Built with GitHub Pages.
 
 ---
 
-Copyright © 2026 secwexen. All Rights Reserved. Content licensed under CC BY 4.0 | Code usage is prohibited.
+## License & Copyright
+
+Copyright © 2026 Secwexen. All Rights Reserved.  
+
+- **Content License:** CC BY 4.0  
+  You are free to share and adapt the written content, provided that proper attribution is given.  
+
+- **Code Usage:** Prohibited  
+  The source code in this repository is not licensed for reuse, modification, or redistribution.  

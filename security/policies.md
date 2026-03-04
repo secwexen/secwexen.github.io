@@ -1,6 +1,6 @@
 # Security Policies
 
-This key provides a PGP public key for private, encrypted personal communication. The key is intended only for secure contact and is not used for software signing or verification.
+This key provides a PGP public key for private, encrypted personal communication. The key is intended only for secure contact. Is not used for software signing or verification.
 
 ## Secure Personal Contact
 

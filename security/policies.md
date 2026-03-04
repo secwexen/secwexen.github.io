@@ -6,7 +6,7 @@ This key provides a PGP public key for private, encrypted personal communication
 
 If you need to share confidential or sensitive information with me, you may use the following PGP public key:
 
-- Public Key: `/security/pgp.asc`
+- Public Key: `https://secwexen.github.io/security/pgp.asc`
 - Fingerprint: Coming Soon
 
 ## Scope

@@ -12,6 +12,6 @@ The site serves as a central hub for research notes, writeups, tools, and long-f
 
 ## Security and Privacy
 
-- Refer to `security.txt` and `pgp-key.txt` for verification and secure communication.
+- Refer to [SECURITY.md](SECURITY.md) and [pgp-key.txt](pgp-key.txt) for verification and secure communication.
 
 This documentation will be updated as the site evolves.

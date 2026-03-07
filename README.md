@@ -3,6 +3,10 @@
 This repository hosts my personal cybersecurity website, featuring research, technical notes, writeups, tools, and long‑form articles.  
 The site serves as a central hub for my work in offensive security, reverse engineering, and software development.
 
+## Live Site
+
+[https://secwexen.github.io](https://secwexen.github.io)
+
 ## Built With
 
 - **GitHub Pages** — static site hosting  

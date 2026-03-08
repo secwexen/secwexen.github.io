@@ -25,3 +25,7 @@ Copyright © 2026 secwexen.
 
 - **Code Usage: Prohibited**  
   The source code in this repository is not licensed for reuse, modification, or redistribution.  
+
+## Connect
+
+- [GitHub](https://github.com/secwexen)

@@ -8,7 +8,7 @@ The website serves as a central hub for my work in offensive security, reverse e
 
 ## Live Site
 
-[https://secwexen.github.io](https://secwexen.github.io)
+[https://secwexen.github.io/](https://secwexen.github.io/)
 
 ## Built With
 

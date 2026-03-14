@@ -29,4 +29,4 @@ Copyright © 2026 secwexen.
 
 ## Connect
 
-- [GitHub](https://github.com/secwexen)
+- GitHub: [GitHub Profile](https://github.com/secwexen)

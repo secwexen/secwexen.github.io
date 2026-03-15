@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 
   <channel>
     <title>Secwexen Website</title>
     <link>https://secwexen.github.io/</link>
+    <atom:link href="https://secwexen.github.io/rss.xml" rel="self" type="application/rss+xml"/>
     <description>Personal cybersecurity website showcasing research, tools, and technical writeups.</description>
     <language>en-us</language>
     <lastBuildDate>03 Jan 2026</lastBuildDate>

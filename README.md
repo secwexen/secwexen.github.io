@@ -21,12 +21,6 @@ The website serves as a central hub for my work in offensive security, reverse e
 
 Copyright © 2026 secwexen. All Rights Reserved.
 
-- **Content License: CC BY 4.0**  
-  You are free to share and adapt the written content, provided that proper attribution is given.  
-
-- **Code Usage: Prohibited**  
-  The source code in this repository is not licensed for reuse, modification, or redistribution.  
-
 ## Connect
 
 - GitHub: [GitHub Profile](https://github.com/secwexen)

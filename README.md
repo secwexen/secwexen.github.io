@@ -19,7 +19,7 @@ The website serves as a central hub for my work in offensive security, reverse e
 
 ## License & Copyright
 
-Copyright © 2026 secwexen. 
+Copyright © 2026 secwexen. All Rights Reserved.
 
 - **Content License: CC BY 4.0**  
   You are free to share and adapt the written content, provided that proper attribution is given.  

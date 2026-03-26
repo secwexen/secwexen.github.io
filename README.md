@@ -17,7 +17,7 @@ The website serves as a central hub for my work in offensive security, reverse e
 - **Custom HTML/CSS** — layout and styling  
 - **JavaScript** — interactive components and custom functionality
 
-## License & Copyright
+## Legal
 
 Copyright © 2026 secwexen. All Rights Reserved.
 

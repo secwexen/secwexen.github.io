@@ -2,7 +2,9 @@
 
 This repository hosts my personal cybersecurity website, featuring research, technical notes, writeups, tools, and long‑form articles. 
 
-The website serves as a central hub for my work in offensive security, reverse engineering, and software development.
+The website serves as a central hub for my work in offensive security, reverse engineering, and software development.  
+
+This repository hosts a personal cybersecurity website built with **HTML, CSS, and JavaScript**, deployed via **GitHub Pages**.
 
 ## Live Site
 

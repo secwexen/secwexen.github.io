@@ -4,8 +4,6 @@ This repository hosts my personal cybersecurity website, featuring research, tec
 
 The website serves as a central hub for my work in offensive security, reverse engineering, and software development.  
 
-This repository hosts a personal cybersecurity website built with **HTML, CSS, and JavaScript**, deployed via **GitHub Pages**.
-
 ## Live Site
 
 [https://secwexen.github.io/](https://secwexen.github.io/)

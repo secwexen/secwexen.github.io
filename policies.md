@@ -15,4 +15,4 @@ The PGP key is provided solely for personal communication. It does not imply any
 
 ## Key Rotation
 
-The key may be updated or rotated when necessary. Any changes will be noted in this file.
+The key may be updated or rotated when necessary.

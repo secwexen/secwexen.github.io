@@ -5,7 +5,7 @@ type: generic
 authors:
   - name: "Secwexen"
 repository-code: "https://github.com/secwexen/secwexen.github.io"
-url: "https://github.com/secwexen.github.io/"
+url: "https://secwexen.github.io/"
 abstract: >
   This website hosts my personal cybersecurity portfolio. It features original research, technical notes, writeups, tools, and long-form articles across multiple domains of information security.
 keywords:

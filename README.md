@@ -12,7 +12,7 @@ The website serves as a central hub for my work in offensive security, reverse e
 
 - **GitHub Pages** — static site hosting  
 - **Markdown** — content formatting  
-- **Custom HTML/CSS** — layout and styling  
+- **Custom HTML / CSS** — layout and styling  
 - **JavaScript** — interactive components and custom functionality
 
 ## Legal

@@ -1,8 +1,8 @@
 # secwexen.github.io
 
-This repository hosts my personal cybersecurity website, featuring research, technical notes, writeups, tools, and long‑form articles. 
+This repository hosts my personal cybersecurity website, featuring research, technical notes, writeups, tools, and long‑form articles.
 
-The website serves as a central hub for my work in offensive security, reverse engineering, and software development.  
+The website serves as a central hub for my work in offensive security, reverse engineering, and software development.
 
 ## Live Site
 

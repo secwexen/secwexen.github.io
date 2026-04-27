@@ -17,4 +17,4 @@ The website serves as a central hub for my work in offensive security, reverse e
 
 ## Legal
 
-Copyright © 2026 secwexen. All Rights Reserved.
+Copyright © 2025-2026 secwexen. All Rights Reserved.

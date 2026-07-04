@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Secwexen | Cybersecurity Expert</title>
+    <link rel="icon" href="https://avatars.githubusercontent.com/u/129677392?v=4" type="image/png" sizes="32x32">
+    <link rel="canonical" href="https://secwexen.github.io/">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" crossorigin="anonymous">
+    <meta name="description" content="Cybersecurity expert specializing in offensive security, adversarial simulation, DFIR, and detection engineering.">
+    <meta name="keywords" content="Cybersecurity, Offensive Security, Defensive Security, Security Research, Ethical Hacking">
+    <meta name="robots" content="index, follow">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Secwexen | Cybersecurity Expert">
+    <meta property="og:description" content="Cybersecurity expert specializing in offensive security, adversarial simulation, DFIR, and detection engineering.">
+    <meta property="og:url" content="https://secwexen.github.io/">
+    <meta property="og:image" content="https://avatars.githubusercontent.com/u/129677392?v=4">
+    <meta property="og:site_name" content="Secwexen | Cybersecurity Expert">
+    <meta property="og:locale" content="en_US">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; upgrade-insecure-requests; script-src 'self' https://cdn.tailwindcss.com 'unsafe-inline'; style-src 'self' https://fonts.googleapis.com 'unsafe-inline'; font-src 'self' https://fonts.gstatic.com; img-src 'self' https://avatars.githubusercontent.com; connect-src 'self'; frame-src 'none'; object-src 'none'; base-uri 'self'; form-action 'self';">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta http-equiv="Permissions-Policy" content="geolocation=(), microphone=(), camera=()">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Secwexen | Cybersecurity Expert">
+    <meta name="twitter:description" content="Cybersecurity expert specializing in offensive security, adversarial simulation, DFIR, and detection engineering.">
+    <meta name="twitter:image" content="https://avatars.githubusercontent.com/u/129677392?v=4">
+
+<script type="application/ld+json">
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "@id": "https://secwexen.github.io/#person",
+    "name": "Secwexen",
+    "url": "https://secwexen.github.io/",
+    "image": "https://avatars.githubusercontent.com/u/129677392?v=4",
+    "jobTitle": "Cybersecurity Expert",
+    "knowsAbout": [
+      "Cybersecurity Expert",
+      "Offensive Security",
+      "Defensive Security",
+      "Digital Forensics",
+      "Security Research",
+    ],
+    "sameAs": [
+      "https://github.com/secwexen",
+      "https://gist.github.com/secwexen"
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "@id": "https://secwexen.github.io/#website",
+    "name": "Secwexen | Cybersecurity Expert",
+    "url": "https://secwexen.github.io/",
+    "description": "Cybersecurity expert specializing in offensive security, adversarial simulation, DFIR, and detection engineering.",
+    "publisher": {
+      "@id": "https://secwexen.github.io/#person"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": "https://secwexen.github.io/#webpage",
+    "name": "Secwexen | Cybersecurity Expert",
+    "url": "https://secwexen.github.io/",
+    "inLanguage": "en",
+    "isPartOf": {
+      "@id": "https://secwexen.github.io/#website"
+    },
+    "about": {
+      "@id": "https://secwexen.github.io/#person"
+    },
+    "mainEntity": {
+      "@id": "https://secwexen.github.io/#person"
+    },
+    "primaryImageOfPage": {
+      "@type": "ImageObject",
+      "@id": "https://secwexen.github.io/#primaryimage",
+      "url": "https://avatars.githubusercontent.com/u/129677392?v=4",
+      "contentUrl": "https://avatars.githubusercontent.com/u/129677392?v=4",
+      "caption": "Secwexen | Cybersecurity Expert Logo"
+    }
+  }
+]
+</script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+
+<body class="font-inter bg-var-bg text-var-text transition-colors duration-500 min-h-screen">
+    <div id="mobileMenuBackdrop" class="fixed inset-0 z-40 bg-black/50 transition-opacity duration-300 opacity-0 pointer-events-none lg:hidden"></div>
+    <div id="mobileMenu" class="fixed inset-y-0 right-0 z-50 transform translate-x-full transition-transform duration-300 ease-in-out bg-var-panel p-6 shadow-2xl w-80 max-w-[70vw] lg:hidden overflow-y-auto">
+        <div class="flex justify-end mb-8">
+            <button id="closeMenu" class="top-4 right-4 text-xl p-2 rounded-full hover:bg-var-bg/30 text-var-text transition z-[100]" aria-label="Close menu">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6L6 18M6 6l12 12"/></svg>
+            </button>
+        </div>
+        <nav class="flex flex-col space-y-4 text-lg">
+            <a href="#about" class="text-var-text mobile-link" onclick="document.getElementById('closeMenu').click()">About</a>
+            <a href="#focus-areas" class="text-var-text mobile-link" onclick="document.getElementById('closeMenu').click()">Focus Areas</a>
+            <a href="#skills-matrix" class="text-var-text mobile-link" onclick="document.getElementById('closeMenu').click()">Skills Matrix</a>
+            <a href="#featured-project" class="text-var-text mobile-link" onclick="document.getElementById('closeMenu').click()">Featured Project</a>
+            <a href="#security-research" class="text-var-text mobile-link" onclick="document.getElementById('closeMenu').click()">Security Research</a>
+            <a href="#contact" class="text-var-text mobile-link" onclick="document.getElementById('closeMenu').click()">Contact</a>
+        </nav>
+    </div>
+
+    <header id="mainHeader" role="banner" class="sticky top-0 z-50 header-bg border-b border-transparent shadow-var transition-colors duration-500">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center justify-between">
+            <a href="#top" class="flex items-center space-x-2 transition" aria-label="Return to top">
+                <img src="https://avatars.githubusercontent.com/u/129677392?v=4" class="w-10 h-10" style="width: 40px; height: 40px; border-radius: 50%;" alt="Secwexen Logo">
+                <div class="flex flex-col leading-none">
+                    <span class="logo-text text-xl font-extrabold tracking-tight">SECWEXEN</span>
+                    <span class="text-xs font-medium text-var-muted inline">CYBERSECURITY EXPERT</span>
+                </div>
+            </a>
+            
+            <nav class="hidden lg:flex space-x-6" aria-label="Primary">
+                <a href="#about" class="text-sm font-medium hover:opacity-80 transition duration-200 border-b-2 border-transparent py-1.5 active-link">About</a>
+                <a href="#focus-areas" class="text-sm font-medium hover:opacity-80 transition duration-200 border-b-2 border-transparent py-1.5 active-link">Focus Areas</a>
+                <a href="#skills-matrix" class="text-sm font-medium hover:opacity-80 transition duration-200 border-b-2 border-transparent py-1.5 active-link">Skills Matrix</a>
+                <a href="#featured-project" class="text-sm font-medium hover:opacity-80 transition duration-200 border-b-2 border-transparent py-1.5 active-link">Featured Project</a>
+                <a href="#security-research" class="text-sm font-medium hover:opacity-80 transition duration-200 border-b-2 border-transparent py-1.5 active-link">Security Research</a>
+            </nav>
+
+            <a href="#contact" rel="noopener" class="hidden lg:inline-flex items-center px-4 py-1.5 text-sm font-semibold rounded-xl bg-black text-white hover:bg-var-accent/90 transition-all duration-300 shadow-lg shadow-var-accent/30">Contact</a>
+            
+            <div class="flex items-center space-x-3">
+                <button id="openMenu" class="p-2 lg:hidden rounded-full hover:bg-var-panel/70 transition" aria-label="Open menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main role="main">
+        <section id="about" class="py-12 md:py-24 border-b border-var-border">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-2xl font-bold mb-6 border-b-2 border-var-accent/50 pb-1 w-fit">About</h2>
+                <div class="grid grid-cols-1 gap-4 items-stretch"> 
+                <div class="rounded-xl p-6 bg-var-panel card-shadow transition-colors duration-500" aria-labelledby="hero-title">
+                    <h3 class="text-3xl sm:text-4xl font-extrabold mb-8 leading-tight">Secwexen | Cybersecurity Expert</h3>
+                    <p class="mb-3">Cybersecurity expert specializing in <strong>offensive security</strong>, <strong>adversarial simulation</strong>, <strong>DFIR</strong>, and <strong>detection engineering</strong>.</p>
+                    <p class="mb-3">Experienced in identifying attack paths, analyzing complex threat activity, and developing security tooling for both offensive research and defensive operations.</p>
+                    <p class="mb-1">Strong background in <strong>Python security engineering</strong>, with practical experience in SIEM optimization, malware analysis, threat hunting, and MITRE ATT&CK–driven adversary emulation. Focused on building scalable security automation, improving detection capabilities, and advancing real-world attack simulation methodologies.</p>
+                </div>
+              </div>
+            </div>
+        </section>
+
+        <section id="quick-signal" class="py-12 md:py-16 border-b border-var-border">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-2xl font-bold mb-6 border-b-2 border-var-accent/50 pb-1 inline-block">TL;DR</h2>
+                <div class="grid grid-cols-1 gap-4">
+                    <div class="p-4 rounded-xl bg-var-panel border border-var-border">
+                        <ul class="list-disc ml-5 text-sm space-y-2">
+                            <li>Hands-on DFIR, Malware Analysis & Red Team Labs</li>
+                            <li>Security Tooling Development with (Rust & Python)</li>
+                            <li>Threat Hunting, SIEM & Detection Engineering</li>
+                            <li>Adversarial simulation and detection bypass leading to improvement</li>
+                            <li>Security research, vulnerability analysis, and PoC development in lab environments</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="focus-areas" class="py-12 md:py-16 border-b border-var-border">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-2xl font-bold mb-6 border-b-2 border-var-accent/50 pb-1 inline-block">Focus Areas</h2>
+                <div class="grid grid-cols-1 gap-4">
+                    <div class="p-4 rounded-xl bg-var-panel border border-var-border">
+                        <ul class="list-disc ml-5 text-sm space-y-2">
+                            <li>Penetration Testing (Web, Network, Wireless)</li>
+                            <li>Malware analysis & reverse engineering</li>
+                            <li>Incident response & digital forensics</li>
+                            <li>Threat hunting & OSINT investigations</li>
+                            <li>Detection Engineering (Sigma, SPL, KQL)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills-matrix" class="py-12 md:py-16 border-b border-var-border">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-2xl font-bold mb-6 border-b-2 border-var-accent-2/50 pb-1 inline-block">Skills Matrix</h2>
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
+                    <div class="p-4 rounded-xl bg-var-panel border border-var-border">
+                        <h3 class="text-lg font-semibold mb-4">Offensive Security</h3>
+                        <p class="text-sm ">Metasploit, Burp Suite, Nmap, SQLMap</p>
+                    </div>
+                    <div class="p-4 rounded-xl bg-var-panel border border-var-border">
+                        <h3 class="text-lg font-semibold mb-4">Defensive & SIEM</h3>
+                        <p class="text-sm">Splunk, ELK Stack, Zeek, Wazuh.</p>
+                    </div>
+                    <div class="p-4 rounded-xl bg-var-panel border border-var-border">
+                        <h3 class="text-lg font-semibold mb-4">Digital Forensics (DFIR)</h3>
+                        <p class="text-sm">Autopsy, Volatility, FTK Imager, Ghidra</p>
+                    </div>
+                    <div class="p-4 rounded-xl bg-var-panel border border-var-border">
+                        <h3 class="text-lg font-semibold mb-4">Programming & Scripting</h3>
+                        <p class="text-sm">Python, C, Bash, PowerShell</p>
+                    </div>
+                    <div class="p-4 rounded-xl bg-var-panel border border-var-border">
+                        <h3 class="text-lg font-semibold mb-4">Cloud & Infrastructure</h3>
+                        <p class="text-sm">Docker, Kubernetes, AWS, Terraform</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="collaboration" class="py-12 md:py-16 border-b border-var-border">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-2xl font-bold mb-6 border-b-2 border-var-accent/50 pb-1 inline-block">Collaboration</h2>
+                <div class="grid grid-cols-1 gap-4">
+                    <div class="p-4 rounded-xl bg-var-panel border border-var-border">
+                        <ul class="list-disc ml-5 text-sm space-y-2">
+                            <li>Designing and hosting CTF challenges (Jeopardy & Attack-Defense style)</li>
+                            <li>Real-world penetration testing scenarios (Web, Network, Wireless)</li>
+                            <li>Malware analysis, unpacking, and reverse engineering</li>
+                            <li>Secure coding and auditing in Rust, Python, and Bash</li>
+                            <li>Contributing to open-source cybersecurity tools and red team utilities</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="featured-project" class="py-12 md:py-16 border-b border-var-border">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-2xl font-bold mb-6 border-b-2 border-var-accent-2/50 pb-1 inline-block">Featured Project</h2>
+                
+                <div class="p-6 rounded-xl bg-var-panel border border-var-border mb-6">
+                    <h3 class="text-xl font-bold mb-6">AAPP‑MART</h3>
+                    <p class="mb-6"><strong>AAPP‑MART</strong> (AI‑Autonomous Attack Path Prediction & Multi‑Agent Red Team Simulation Engine) is an open‑source security engine for offensive security, adversarial modeling, and automated risk assessment.</p>
+
+                    <a class="inline-flex items-center space-x-2 px-4 py-2 rounded-lg border border-var-border bg-var-bg hover:bg-var-bg/70 text-var-text font-semibold transition-all duration-300 mb-2 sm:mb-0 mr-2" href="https://secwexen.github.io/aapp-mart/" target="_blank" rel="noopener">
+                        <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm7.938 9h-3.02a15.7 15.7 0 00-1.062-4.584A8.015 8.015 0 0119.938 11zM12 4c.94 1.2 1.74 3.35 2.02 7H9.98C10.26 7.35 11.06 5.2 12 4zM4.062 13h3.02c.24 1.66.62 3.24 1.062 4.584A8.015 8.015 0 014.062 13zM7.082 11H4.062A8.015 8.015 0 018.144 6.416 15.7 15.7 0 007.082 11zM12 20c-.94-1.2-1.74-3.35-2.02-7h4.04C13.74 16.65 12.94 18.8 12 20zm3.918-1.416A15.7 15.7 0 0016.98 13h3.02a8.015 8.015 0 01-4.082 5.584z"/></svg>
+                        <span>Official Website</span>
+                    </a>
+                    
+                    <a class="inline-flex items-center space-x-2 px-4 py-2 rounded-lg border border-var-border bg-var-bg hover:bg-var-bg/70 text-var-text font-semibold transition-all duration-300" href="https://github.com/secwexen/aapp-mart" target="_blank" rel="noopener">
+                        <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                        <span>GitHub Repository</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    <section id="security-labs" class="py-12 md:py-16 border-b border-var-border">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <h2 class="text-2xl font-bold mb-6 border-b-2 border-var-accent/50 pb-1 inline-block">Security Labs</h2>
+
+        <div class="overflow-x-auto">
+            <table class="w-full text-sm border border-var-border rounded-xl overflow-hidden bg-var-panel">
+                
+                <thead class="bg-var-bg border-b border-var-border">
+                    <tr>
+                        <th class="text-left p-4 font-semibold">Repository</th>
+                        <th class="text-left p-4 font-semibold">What it Shows</th>
+                    </tr>
+                </thead>
+
+                <tbody class="divide-y divide-var-border">
+                    
+                    <tr>
+                        <td class="p-4">
+                            <a href="https://github.com/secwexen/security-playbooks" target="_blank" rel="noopener" class="hover:text-var-accent transition" style="color: #4493f8;">Security Playbooks</a>
+                        </td>
+                        <td class="p-4">MITRE ATT&CK–based scenarios, detection rules (Sigma, YARA, and Suricata), PoCs, labs, and learning material</td>
+                    </tr>
+
+                    <tr>
+                        <td class="p-4">
+                            <a href="https://github.com/secwexen/attack-simulator-framework" target="_blank" rel="noopener" class="hover:text-var-accent transition" style="color: #4493f8;">Attack Simulator Framework</a>
+                        </td>
+                        <td class="p-4">Simulation framework leveraging MITRE ATT&CK techniques</td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+</section>
+
+        <section id="contributions" class="py-12 md:py-16 border-b border-var-border">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-2xl font-bold mb-6 border-b-2 border-var-accent/50 pb-1 inline-block">Contributions</h2>
+                <div class="grid grid-cols-1 gap-4">
+                    <div class="p-4 rounded-xl bg-var-panel border border-var-border">
+                        <ul class="list-disc ml-5 text-sm space-y-2">
+                            <li>Conducted research in network security and developed new vulnerability scenarios.</li>
+                            <li>Developed new Python modules for the open-source security engine AAPP-MART.</li>
+                            <li>Published technical research notes on malware reverse engineering and network protocol analysis.</li>
+                            <li>Performed vulnerability assessments and created Proof of Concept (PoC) exploits in controlled lab environments.</li>
+                            <li>Designed and hosted CTF challenges adopted by local cybersecurity communities.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="security-research" class="py-12 md:py-16 border-b border-var-border">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-2xl font-bold mb-6 border-b-2 border-var-accent-2/50 pb-1 inline-block">Security Research</h2>
+                <div class="grid grid-cols-1 gap-4">
+                    <div class="p-4 rounded-xl bg-var-panel border border-var-border">
+                        <div class="space-y-2 text-sm">
+                            <div class="flex flex-col sm:flex-row sm:space-x-4"><div class="text-var-muted font-medium sm:w-5"><strong>Gist:</strong></div><div><a href="https://gist.github.com/secwexen" target="_blank" rel="noopener" class="hover:text-var-accent transition duration-300" style="color: #4493f8;">Code Snippets & PoCs</a></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="current-work" class="py-12 md:py-16 border-b border-var-border">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-2xl font-bold mb-6 border-b-2 border-var-accent/50 pb-1 inline-block">Current Work</h2>
+                <div class="grid grid-cols-1 gap-4">
+                    <div class="p-4 rounded-xl bg-var-panel border border-var-border">
+                        <ul class="list-disc ml-5 text-sm space-y-2">
+                            <li>Developing Rust-based security tools for automation</li>
+                            <li>Studying advanced malware analysis and reverse engineering</li>
+                            <li>Preparing for <strong>OSCP</strong> certification</li>
+                            <li>Building new CTF challenges for Red Team simulations</li>
+                            <li>I am experimenting with threat-hunting automation and SIEM data analysis</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-12 md:py-16 border-b border-var-border">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-2xl font-bold mb-6 border-b-2 border-var-accent-2/50 pb-1 inline-block">Contact</h2>
+                <div class="grid grid-cols-1 gap-4">
+                    <div class="p-4 rounded-xl bg-var-panel border border-var-border">
+                        <div class="space-y-2 text-sm">
+                            <div class="flex flex-col sm:flex-row sm:space-x-4"><div class="font-medium sm:w-15"><strong>E-mail:</strong></div><div class="font-mono-jb">Not available</div></div>
+                            <div class="flex flex-col sm:flex-row sm:space-x-4"><div class="font-medium sm:w-10"><strong>GitHub:</strong></div><div><a href="https://github.com/secwexen" target="_blank" rel="noopener" class="transition duration-300" style="color: #4493f8;">GitHub Profile</a></div></div>
+                            <div class="flex flex-col sm:flex-row sm:space-x-4"><div class="font-medium sm:w-5"><strong>PGP:</strong></div><div><a href="https://secwexen.github.io/pgp.asc" target="_blank" rel="noopener" class="font-mono-jb transition duration-300" style="color: #4493f8;">PGP Public Key</a></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="py-6 border-t border-var-border bg-var-bg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row justify-between items-center text-sm">
+            <div>&copy; 2026 secwexen. All Rights Reserved.</div>
+            <div class="mt-2 sm:mt-0 font-semibold text-var-accent">Created & Maintained by secwexen</div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

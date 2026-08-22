@@ -40,8 +40,13 @@
     transition: all 0.3s ease-in-out;
     z-index: 30;
 }
-#mainHeader .logo-text {
-    transition: font-size 0.3s ease-in-out;
+#mobileMenu nav {
+    width: 100%;
+    align-items: center;
+}
+
+#mobileMenu nav a {
+    text-align: center;
 }
 
 @media (max-width: 1024px) {

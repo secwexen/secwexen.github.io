@@ -9,10 +9,10 @@ This research evaluates the implementation of strict egress filtering policies t
 
 ## 2. Technical Implementation Matrix
 
-| Control Vector | Default Configuration | Hardened Configuration | Security Impact |
-| -------------- | --------------------- | ---------------------- | --------------- |
+| Control Vector        | Default Configuration   | Hardened Configuration       | Security Impact                             |
+| --------------------- | ----------------------- | ---------------------------- | ------------------------------------------- |
 | **All-Port Outbound** | Permissive (Any-to-Any) | Whitelist-Only (Port 80/443) | Eliminates unauthorized protocol tunneling. |
-| **DNS Resolution** | Direct External Queries | Local Recursive Forwarders | Prevents DNS tunneling and data leakage. |
+| **DNS Resolution**    | Direct External Queries | Local Recursive Forwarders   | Prevents DNS tunneling and data leakage.    |
 
 ## 3. Operational Outcome
 

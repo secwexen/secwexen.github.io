@@ -9,10 +9,10 @@ This research analyzes the transition from traditional perimeter-centric network
 
 ## 2. Technical Implementation Matrix
 
-| Implementation Layer | Traditional Approach | Zero Trust Approach | Security Impact |
-| -------------------- | -------------------- | ------------------- | --------------- |
-| **Network Boundary** | Flat Network (Any-to-Any Internal) | Software-Defined Micro-Segmentation | Contains lateral threat propagation. |
-| **Authentication** | Static Password / Single-Factor | Continuous Risk-Based MFA | Mitigates credential compromise risks. |
+| Implementation Layer | Traditional Approach               | Zero Trust Approach                 | Security Impact                        |
+| -------------------- | ---------------------------------- | ----------------------------------- | -------------------------------------- |
+| **Network Boundary** | Flat Network (Any-to-Any Internal) | Software-Defined Micro-Segmentation | Contains lateral threat propagation.   |
+| **Authentication**   | Static Password / Single-Factor    | Continuous Risk-Based MFA           | Mitigates credential compromise risks. |
 
 ## 3. Operational Outcome
 

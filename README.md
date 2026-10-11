@@ -1,3 +1,3 @@
 # secwexen.github.io
 
-This repository hosts my personal cybersecurity website.
+This repository contains the source code for my personal cybersecurity portfolio website.

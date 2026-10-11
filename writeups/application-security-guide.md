@@ -4,10 +4,10 @@ A **Cybersecurity Specialist** is responsible for securing software, web applica
 
 ## 1. Core Technical Areas & Workflow
 
-- **OWASP Top 10 Vulnerabilities:** Preventing critical risks such as Injection (SQLi), Broken Authentication, and Server-Side Request Forgery (SSRF).
-- **Threat Modeling (STRIDE):** Systematically analyzing design-phase risks such as spoofing, elevation of privilege, and information disclosure.
-- **Security Testing (SAST/DAST):** Early vulnerability detection using source code analysis and dynamic testing tools (e.g., Burp Suite, SonarQube).
-- **API & Web Service Security:** Protecting REST and GraphQL endpoints against authorization flaws like Broken Object Level Authorization (BOLA) and Broken Function Level Authorization (BFLA).
+- **OWASP Top 10:2025:** Assessing risks such as broken access control, security misconfiguration, software supply chain failures, injection, and authentication failures.
+- **Threat Modeling (STRIDE):** Identifying design-level threats, including spoofing, tampering, repudiation, information disclosure, denial of service, and elevation of privilege.
+- **Security Testing (SAST/DAST):** Detecting code-level and runtime vulnerabilities through static analysis, dynamic testing, and manual security review.
+- **API Security:** Assessing object-level and function-level authorization, authentication, input validation, and sensitive data exposure.
 
 ## 2. Summary of Technical Competencies
 

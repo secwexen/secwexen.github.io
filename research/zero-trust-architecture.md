@@ -11,9 +11,13 @@ This research analyzes the transition from traditional perimeter-centric network
 
 | Implementation Layer | Traditional Approach               | Zero Trust Approach                 | Security Impact                        |
 | -------------------- | ---------------------------------- | ----------------------------------- | -------------------------------------- |
-| **Network Boundary** | Flat Network (Any-to-Any Internal) | Software-Defined Micro-Segmentation | Contains lateral threat propagation.   |
-| **Authentication**   | Static Password / Single-Factor    | Continuous Risk-Based MFA           | Mitigates credential compromise risks. |
+| Network Boundary     | Flat Network (Any-to-Any Internal) | Software-Defined Micro-Segmentation | Contains lateral threat propagation.   |
+| Authentication       | Static Password / Single-Factor    | Continuous Risk-Based MFA           | Mitigates credential compromise risks. |
 
-## 3. Operational Outcome
+## 3. Expected Security Outcomes
 
-Deploying micro-segmentation policies alongside identity-aware proxies reduced the potential attack surface and lateral movement vectors by **85%** in simulated breach scenarios.
+Micro-segmentation and identity-aware access controls can reduce unnecessary east-west connectivity and constrain lateral movement between workloads.
+
+The effectiveness of these controls depends on segmentation coverage, policy enforcement, identity security, and the ability to detect unauthorized communication.
+
+Quantitative improvements should be reported only when supported by reproducible test results and a documented measurement methodology.

@@ -1,10 +1,10 @@
 # Advanced Active Directory Compromise & BloodHound Analysis
 
-Comprehensive attack path analysis demonstrating lateral movement and domain escalation via Kerberoasting and ACL abuse in an Active Directory environment.
+Attack path analysis demonstrating potential lateral movement and privilege escalation through Kerberoasting and Active Directory ACL abuse in an authorized Active Directory environment.
 
 ## 1. Domain Enumeration
 
-Initial mapping of domain controllers, users, and trusts using BloodHound and PowerView.
+Initial mapping of domain controllers, users, groups, and trusts using BloodHound and PowerView.
 
 ```powershell
 Invoke-BloodHound -CollectionMethod All -Domain corp.local
@@ -15,7 +15,7 @@ Invoke-BloodHound -CollectionMethod All -Domain corp.local
 
 ## 2. Exploitation & Lateral Movement
 
-Extracted service principal names (SPNs) for offline cracking and abused vulnerable access control lists (ACLs) to gain privileged credentials.
+Identified service principal names (SPNs) for offline password-cracking assessment and analyzed vulnerable Active Directory access control lists (ACLs) that could enable privilege escalation.
 
 ```bash
 impacket-GetUserSPNs corp.local/user:Password123 -dc-ip 10.10.10.5 -request
@@ -23,13 +23,17 @@ impacket-GetUserSPNs corp.local/user:Password123 -dc-ip 10.10.10.5 -request
 
 ## 3. Privilege Escalation
 
-Utilized harvested administrative tokens to achieve domain-wide execution privileges (Domain Admin).
+Analyzed the identified attack paths and, where authorized, validated access to privileged credentials and resources.
 
 ```bash
 impacket-secretsdump corp.local/administrator:Hash@10.10.10.5
 ```
 
+Successful Domain Admin access should only be reported when independently validated through authorized testing and supporting evidence.
+
 ## 4. Remediation
 
-- Enforce strong, complex passwords for service accounts.
-- Audit and harden Active Directory ACLs to prevent permission abuse.
+- Enforce strong, unique passwords for service accounts.
+- Use managed service accounts where appropriate.
+- Audit and harden Active Directory ACLs to prevent unauthorized permission abuse.
+- Apply least-privilege principles to service and administrative accounts.
